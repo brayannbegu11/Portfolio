@@ -23,6 +23,10 @@
     - jQuery link
   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 
+    - Font awesome
+    -->
+    <script src="https://kit.fontawesome.com/4a3d10692d.js" crossorigin="anonymous"></script>
 
     <!--
     - toastr link
@@ -38,7 +42,7 @@
     <!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <!--
     - google font link
@@ -61,13 +65,13 @@
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <img src="./assets/images/david-sha.jpg" alt="David Sha" width="80" />
+                    <img src="./assets/images/david-sha.jpg" alt="Brayann Benavides" width="80" />
                 </figure>
 
                 <div class="info-content">
-                    <h1 class="name" title="David Sha">David Sha</h1>
+                    <h1 class="name" title="Brayann Benavides">Brayann Benavides</h1>
 
-                    <p class="title">Software Developer</p>
+                    <p class=" title">Software Developer</p>
                 </div>
 
                 <button class="info_more-btn" data-sidebar-btn>
@@ -83,13 +87,13 @@
                 <ul class="contacts-list">
                     <li class="contact-item">
                         <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <!-- <i class="fa-regular fa-envelope"></i> -->
                         </div>
 
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
 
-                            <a href="mailto:david@davidsha.me" class="contact-link">brayannbegu11@gmail.com</a>
+                            <a href="mailto:brayannbegu11@gmail.com" class="contact-link">brayannbegu11@gmail.com</a>
                         </div>
 
 
@@ -97,7 +101,7 @@
 
                     <li class="contact-item">
                         <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
+                            <!-- <ion-icon name="location-outline"></ion-icon> -->
                         </div>
 
                         <div class="contact-info">
@@ -148,14 +152,9 @@
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Portfolio</button>
                     </li>
-
-                    <!-- <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Blog</button>
-                    </li>
-
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Contact</button>
-                    </li> -->
+                    </li>
                 </ul>
             </nav>
 
@@ -250,18 +249,18 @@
                 </section>
 
                 <!--
-          - testimonials
+          - Certifications
         -->
 
-                <section class="testimonials">
+                <!-- <section class="testimonials">
                     <h3 class="h3 testimonials-title">Certifications</h3>
 
                     <ul class="testimonials-list has-scrollbar">
                         <li class="testimonials-item">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="testimonials-avatar-box">
-                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/b6/f49480857811e59a278d7d1ca6079f/U-M_LogoSmHoriz_200x48.png?auto=format%2Ccompress&dpr=1&h=45"
-                                        alt="Raphael Azot" width="60" data-testimonials-avatar />
+                                    <img src="./assets/images/avatar-mo-h.png" alt="Raphael Azot" width="60"
+                                        data-testimonials-avatar />
                                 </figure>
 
                                 <h4 class="h4 testimonials-item-title" data-testimonials-title>
@@ -297,13 +296,13 @@
                             </div>
                         </li>
                     </ul>
-                </section>
+                </section> -->
 
                 <!--
           - testimonials modal
         -->
 
-                <!-- <div class="modal-container" data-modal-container>
+                <div class="modal-container" data-modal-container>
                     <div class="overlay" data-overlay></div>
 
                     <section class="testimonials-modal">
@@ -336,7 +335,7 @@
                             </div>
                         </div>
                     </section>
-                </div> -->
+                </div>
 
                 <!--
           - clients
@@ -348,38 +347,52 @@
                     <ul class="clients-list has-scrollbar">
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
-                                alt="JS logo" />
+                            <img src="/assets/images/js-logo.png" alt="JS logo" />
                             <!-- </a> -->
                         </li>
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://w7.pngwing.com/pngs/140/948/png-transparent-blue-and-yellow-logo-python-logo-programmer-fierce-python-s-cdr-angle-text-thumbnail.png"
-                                alt="Python logo" />
+                            <img src="/assets/images/python-logo.png" alt="Python logo" />
                             <!-- </a> -->
                         </li>
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
-                                alt="React logo" />
+                            <img src="/assets/images/react-logo.png" alt="React logo" />
                             <!-- </a> -->
                         </li>
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/swift-programming-language-icon.png"
-                                alt="Swift logo" />
+                            <img src="/assets/images/swift-logo.png" alt="Swift logo" />
                             <!-- </a> -->
                         </li>
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-1.png"
-                                alt="Java logo" />
+                            <img src="/assets/images/kotlin-logo.png" alt="Kotlin logo" />
                             <!-- </a> -->
                         </li>
                         <li class="clients-item">
                             <!-- <a href="https://n8n.io/"> -->
-                            <img src="https://static-00.iconduck.com/assets.00/nodejs-plain-wordmark-icon-2048x579-3j759f9y.png"
-                                alt="Node logo" />
+                            <img src="/assets/images/java-logo.png" alt="Java logo" />
+                            <!-- </a> -->
+                        </li>
+                        <li class="clients-item">
+                            <!-- <a href="https://n8n.io/"> -->
+                            <img src="/assets/images/node-logo.png" alt="Node logo" />
+                            <!-- </a> -->
+                        </li>
+                        <li class="clients-item">
+                            <!-- <a href="https://n8n.io/"> -->
+                            <img src="/assets/images/express-logo.png" alt="Express logo" />
+                            <!-- </a> -->
+                        </li>
+                        <li class="clients-item">
+                            <!-- <a href="https://n8n.io/"> -->
+                            <img src="/assets/images/html-logo.png" alt="Node logo" />
+                            <!-- </a> -->
+                        </li>
+                        <li class="clients-item">
+                            <!-- <a href="https://n8n.io/"> -->
+                            <img src="/assets/images/css-logo.png" alt="Node logo" />
                             <!-- </a> -->
                         </li>
 
@@ -534,7 +547,7 @@
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>C</button>
+                            <button data-filter-btn>Mobile Development</button>
                         </li>
 
                         <li class="filter-item">
@@ -559,7 +572,7 @@
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>C</button>
+                                <button data-select-item>Mobile Development</button>
                             </li>
 
                             <li class="select-item">
@@ -601,7 +614,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="c">
+                        <li class="project-item active" data-filter-item data-category="web development">
                             <a href="https://github.com/brayannbegu11/heroesApp" target="_blank">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
@@ -618,20 +631,53 @@
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="c">
+                        <li class="project-item active" data-filter-item data-category="web development">
                             <a href="https://github.com/brayannbegu11/coctel" target="_blank">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-rpc-framework.png" alt="Cocktail Project"
-                                        loading="lazy" />
+                                    <img src="./assets/coctel-project.png" alt="Cocktail Project" loading="lazy" />
                                 </figure>
 
                                 <h3 class="project-title">Cocktail Terminal</h3>
 
                                 <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://brayannbegu11.github.io/pagina-market/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/MarketFresh-project.png" alt="Market Fresh Project"
+                                        loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Market Fresh Web Page</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="mobile development">
+                            <a href="https://brayannbegu11.github.io/pagina-market/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/Renter app project.jpg" alt="Market Fresh Project"
+                                        loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Car rental app</h3>
+
+                                <p class="project-category">Mobile Development</p>
                             </a>
                         </li>
                     </ul>
@@ -688,7 +734,7 @@
     <!--
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+    <script src="index.js"></script>
 
     <!--
     - ionicon link

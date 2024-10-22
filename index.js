@@ -134,48 +134,6 @@ for (let i = 0; i < formInputs.length; i++) {
     });
 }
 
-// add event to submitted form
-form.addEventListener("submit", event => {
-    // prevent form from being submitted
-    event.preventDefault();
-
-    // send submission details to webhook
-    fetch("https://n8n.davidsha.me/webhook/2c51b576-9ed7-4e64-a8db-6e2507977551", {
-        method: "POST",
-        body: new FormData(form),
-        mode: "no-cors"
-    })
-        .then(function () {
-            // reset only the message field
-            form.message.value = "";
-
-            // disable submit button
-            formBtn.setAttribute("disabled", "");
-
-            // show message on screen
-            toastr.options = {
-                "closeButton": true,
-                "debug": false,
-                "newestOnTop": false,
-                "progressBar": true,
-                "positionClass": "toast-bottom-right",
-                "preventDuplicates": false,
-                "onclick": null,
-                "showDuration": "300",
-                "hideDuration": "1000",
-                "timeOut": "5000",
-                "extendedTimeOut": "1000",
-                "showEasing": "swing",
-                "hideEasing": "linear",
-                "showMethod": "fadeIn",
-                "hideMethod": "fadeOut"
-            }
-            toastr.success("Message sent successfully");
-        })
-        .catch(function (error) {
-            console.error(error);
-        });
-});
 
 
 

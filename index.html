@@ -65,7 +65,7 @@
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <img src="./assets/images/david-sha.jpg" alt="Brayann Benavides" width="80" />
+                    <img src="./assets/images/profile.jpeg" alt="Brayann Benavides" width="80" />
                 </figure>
 
                 <div class="info-content">
@@ -698,15 +698,19 @@
                 <section class="mapbox" data-mapbox>
                     <figure>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402589.824632653!2d144.7722783977642!3d-37.971691291608515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1673263062473!5m2!1sen!2sau"
-                            width="400" height="300" loading="lazy"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario!5e0!3m2!1ses!2sca!4v1729624014896!5m2!1ses!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" width="400" height="300"
+                            loading="lazy"></iframe>
                     </figure>
                 </section>
 
                 <section class="contact-form">
                     <h3 class="h3 form-title">Contact Form</h3>
 
-                    <form action="" class="form" data-form id="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form
+                        id="contact-form">
+                        <input type="hidden" name="access_key" value="38d88754-b666-4aae-87d4-0f80325eb388">
                         <div class="input-wrapper">
                             <input type="text" name="firstname" class="form-input" placeholder="First name" required
                                 data-form-input />
